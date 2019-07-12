@@ -1,0 +1,159 @@
+/* COLORS */
+:root {
+    /* cada color tiene una variable :O */
+    /* --blue-navy: #05205D;
+    --blue-light: #3155A7;
+    --brown-leather: #AB987A;
+    --orange-coral: #FF833D;
+    --white-egg: #F5F5F5; */
+
+    
+    --prusian-blue: #2B3B85; 
+    --sky-blue: #328CC1;
+    --sky-blue-d: rgba(50, 141, 193, 0.856);    
+    --gold-leaf: rgb(243, 237, 64);
+    --black-ivy: #1D2731;
+    --white-egg: #F5F5F5; 
+  }
+  *{
+    font-family: 'Poppins', sans-serif;
+
+  }
+  /* 
+  ************************************
+  HEADER
+  ************************************
+  */
+  .header-area .main-menu,
+  .header-area .main-menu, .dropdown-menu {
+    /* background: var(--black-ivy); */
+    background: #328CC1;
+    box-shadow: 0 3px 16 0 rgba(0, 0, 0, 1);
+  }
+  /* .header-area .main-menu,
+  .header-area .main-menu, .dropdown-menu {
+    background: var(--black-ivy);
+    box-shadow: 0 3px 16 0 rgba(0, 0, 0, .1);
+  } */
+
+  .header-area .main-menu .navbar {
+    height: 70px;
+  }
+
+  .header-area .main-menu .navbar .nav-link {
+    font-size: 14px;
+    color: var(--white-egg);
+    padding: 8px;
+  }
+
+  .header-area .main-menu .navbar .nav-link:hover {
+    font-weight: 600;
+  }
+
+    /* 
+  ************************************
+  MAIN INFO
+  ************************************
+  */
+  .main-info{
+    position: relative;
+    z-index: 1;
+    padding-bottom: 42px;
+    margin-bottom: 58px;
+  }
+  .main-info .container{
+    border-radius: 12px;
+    position: relative;
+    bottom: -100px;
+    background: #fff;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    box-shadow: 0 20px 80px 0 rgba(153, 153, 153, 0.3);
+    background-image: linear-gradient(-90deg, var(--prusian-blue)30%,var(--sky-blue) ,var(--sky-blue-d));
+  }
+  .main-info .container .img-col .img-container > img{
+    width: 90%;
+    height: 80%;
+  }
+  .main-info .container .txt-col .text-container{
+    margin: 20px auto 0 auto;
+    width: 90%;
+    color: var(--white-egg);
+  }
+  .main-info .container .txt-col .text-container h4{
+    font-size: 16px;
+  }
+  .main-info .container .txt-col .text-container p{
+    font-size: 16px;
+    color: var(--gold-leaf);
+    margin-bottom: 20px;
+  }
+  .main-info .container .txt-col .text-container ul.basic-info{
+    padding-left: 0;
+  }
+  .main-info .container .txt-col .text-container ul.basic-info >li{
+    margin-bottom: 8px;
+  }
+  .main-info .container .txt-col .text-container ul.basic-info >li >i{
+    margin-right: 4px;
+    color: var(--gold-leaf);
+  }
+  .main-info .container .txt-col .text-container ul.social-nw{
+    margin-top: 20px; 
+    padding-left: 0;
+  }
+  .main-info .container .txt-col .text-container ul.social-nw >li{
+    margin-right: 20px;
+  }
+  .main-info .container .txt-col .text-container ul.social-nw >li i{
+    font-size: 40px;
+    color: var(--white-egg);
+  }
+
+   /* 
+  ************************************
+  SKILLS
+  ************************************
+  */
+  .skill-item{
+    /* para darle espacio al item */
+    margin-bottom: 24px;
+  }
+  .skill-item .text{
+    /* espacio para el texto */
+    margin-bottom: 8px;
+  }
+  .skill-item .progress .progress-bar{
+    height: 10px;
+    border-radius: 5px;
+    vertical-align: middle;
+    align-self: center;
+
+    /* background-image: -moz-linear-gradient(0deg, var(--blue-light) 0%,var(--brown-leather) 30%);
+    background-image: -webkit-linear-gradient(0deg, var(--blue-light)0%,var(--brown-leather)30%);
+    background-image: -ms-linear-gradient(0deg, var(--blue-light)0%,var(--brown-leather)30%); */
+
+    background-image: linear-gradient(-90deg, var(--sky-blue-d)50%, var(--sky-blue)10%, var(--gold-leaf));
+  }
+
+  /* 
+  ************************************
+  PORTFOLIO
+  ************************************
+  */
+  .card-container .card{
+    max-width: 360px;
+    margin-top: 16px;
+  }
+  .card-container .card i{
+    font-size: 80px;
+    color: var(--prusian-blue);
+  }
+  .card-container .card h5{
+    margin-top: 12px;
+    margin-bottom: 8px;
+    opacity: 0.8;
+  }
+
+
+

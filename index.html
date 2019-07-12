@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Required Meta Tags -->
+    <!-- shrink-to-fit=si si no se pone, la pagina se haria pequeñita, en este caso no se pone porque
+    nosotros vamos a adaptar la página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-area fixed-top">
+        <div class="main-menu">
+            <nav class="navbar">
+                <!-- Container para que los elementos no se salgan del area que queremos -->
+                <div class="container">
+                    <!-- ml = margin left auto mr = margin right -->
+                    <ul class="nav ml-auto mr-auto mr-md-0">
+                        <li class="nav-item active"><a class="nav-link" href="#main-info">Principal</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Educación</a></li>
+                        <!-- dropdown es una clase de bootstrap indica que aqui estara un menu-->
+                        <li class="nav-item submenu dropdown">
+                            <!-- data-toggle = indica la accion o funcion que realizara el elemento, en este caso desplegar (dropdown)
+                                 role = indica el comportamiento, en este caso se comporta como un boton
+                                 aria-haspopup = con esto indica que va a tener un submenu
+                                 aria-expanded = indica que por defecto no estara desplegado el menu? -->
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Proyectos</a>
+                            <!-- dropdown tambien es una clase definida por bootstrap -->
+                            <ul class="dropdown-menu">
+                                <!-- Elementos que se mostraran dentro del dropdown -->
+                                <li class="nav-item"><a href="#portfolio" class="nav-link">Portafolio</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">GitHub</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- ./Header -->
+
+    <!-- Main info -->
+    <!-- main-info bg-grad, estas no son clases bootstrap -->
+    <!-- el id servira como un link para dirigir a esta area -->
+    <section class="main-info" id="main-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5 col-xl-6 img-col d-flex align-items-center">
+                    <div class="img-container d-flex justify-content-center">
+                        <img src="img/mifoto.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 col-xl-6 txt-col">
+                    <div class="text-container">
+                        <h3 class="sect-title text-upercase">Karina Bringas</h3>
+                        <h4 class="text-upercase">Desarrollador de Software</h4>
+                        <p style="font-size: 20px">Desarrrollo de aplicaciones de escritorio y web</p>
+                        <ul class="list-unstyled basic-info">
+                            <li><i class="fas fa-calendar-alt"></i>18 de Enero, 1995</li>
+                            <li><i class="fas fa-phone"></i>921-1365173</li>
+                            <li><i class="fas fa-at"></i>karina.brsa@gmail.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i>México</li>
+                        </ul>
+                        <ul class="list-inline social-nw">
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ./Main info -->
+
+    <!-- Skills -->
+    <section class="sect skills" id="skills">
+        <div class="container">
+        </br>
+            <div class="head-content d-flex align-items-baseline">
+                <button class="btn" type="button" data-toggle="collapse" data-target="#skills-content" aria-expanded="false" aria-controls="skills-content">
+                    <i class="far fa-plus-square"></i>
+                </button>
+                <h3 class="sect-title" style="color:#2B3B85">Habilidades</h3>
+            </div>
+            <div class="row collapse" id="skills-content">
+                <div class="skills-col col-12  col-md-6">
+                    <h4 class="sect-subtitle">Desarrollo de Software</h4>
+                    <div class="skill-item">
+                        <p class="text">Java</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 44%" aria-valuenow="44" aria-valuemin="0" aria-valuemax="100">44%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <p class="text">C#</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <p class="text">PHP + Laravel</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">20%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <p class="text">HTML</p>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-col col-12  col-md-6">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ./Skills -->
+
+    <!-- Portfolio -->
+    <section class="sect portfolio bg-grad-b" id="portfolio">
+        <div class="container">
+            <div class="head-content d-flex align-items-baseline">
+                <button class="btn" type="button" data-toggle="collapse" data-target="#portfolio-content" aria-expanded="false" aria-controls="portfolio-content">
+                    <i class="far fa-plus-square"></i>
+                </button>
+                <h3 class="sect-title" style="color:#2B3B85">Proyectos destacados</h3>
+            </div>
+        </div>
+
+        <div class="container-fluid" id="portfolio-content">
+            <div class="card-container d-flex flex-wrap justify-content-around align-items-center">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h5 class="card-title">Sistema de Prestaciones</h5>
+                        <p class="card-text">Sistema creado para la Universidad Veracruzana,
+                            permite llevar el control y otorgar permisos.
+                        </p>
+                        <a class="btn btn-primary" href="#">Ir a sitio web</a>
+                    </div>
+                </div>
+                <div class="card">
+                        <div class="card-body">
+                            <i class="far fa-file-alt"></i>
+                            <h5 class="card-title">Evaluaciones CAA</h5>
+                            <p class="card-text">Aplicaciones de escritorio que permitian evaluar semanalmente a los estudiantes de íngles
+                                del centro de autoacceso. 
+                            </p>
+                            <a class="btn btn-primary" href="#">Ir a sitio web</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- ./Portfolio -->
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+    
+</body>
+</html>
